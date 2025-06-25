@@ -1,21 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estica Vendas - Curso de Marketing Digital</title>
-    <meta name="description" content="Transforme suas vendas com o curso Estica Vendas. Aprenda copywriting, funil de vendas, tráfego pago e orgânico." />
-    <meta name="author" content="Estica Vendas" />
-
-    <meta property="og:title" content="Estica Vendas - Curso de Marketing Digital" />
-    <meta property="og:description" content="Transforme suas vendas com o curso Estica Vendas. Aprenda copywriting, funil de vendas, tráfego pago e orgânico." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@estica_vendas" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
+    <title>Estica Vendas - DIX VENDE</title>
+    <meta name="description" content="Curso Completo de Marketing Digital - Estica Vendas">
     <style>
         * {
             margin: 0;
@@ -24,936 +14,893 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            overflow-x: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
         }
 
-        .min-h-screen {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
             min-height: 100vh;
-        }
-
-        .bg-gradient {
-            background: linear-gradient(135deg, #1a1a2e 0%, #4a1a5c 50%, #1a1a2e 100%);
-            color: white;
-        }
-
-        .relative {
+            padding: 80px 0;
             position: relative;
         }
 
-        .absolute {
-            position: absolute;
-        }
-
-        .inset-0 {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .flex {
+        .hero {
             display: flex;
-        }
-
-        .flex-col {
-            flex-direction: column;
-        }
-
-        .items-center {
             align-items: center;
-        }
-
-        .justify-center {
             justify-content: center;
-        }
-
-        .text-center {
             text-align: center;
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
         }
 
-        .max-w-4xl {
-            max-width: 56rem;
+        .logo {
+            width: 320px;
+            height: 320px;
+            margin: 0 auto 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            animation: float 3s ease-in-out infinite;
         }
 
-        .max-w-6xl {
-            max-width: 72rem;
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
-        .mx-auto {
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #8B5CF6, #06D6A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            color: #8B5CF6;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            color: #d1d5db;
+            margin-bottom: 60px;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .px-4 {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .py-20 {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-
-        .mb-8 {
-            margin-bottom: 2rem;
-        }
-
-        .mb-12 {
-            margin-bottom: 3rem;
-        }
-
-        .mb-6 {
-            margin-bottom: 1.5rem;
-        }
-
-        .mb-3 {
-            margin-bottom: 0.75rem;
-        }
-
-        .mb-2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .mt-2 {
-            margin-top: 0.5rem;
-        }
-
-        .mt-6 {
-            margin-top: 1.5rem;
-        }
-
-        .mr-3 {
-            margin-right: 0.75rem;
-        }
-
-        .space-x-4 > * + * {
-            margin-left: 1rem;
-        }
-
-        .space-y-6 > * + * {
-            margin-top: 1.5rem;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        .w-8 {
-            width: 2rem;
-        }
-
-        .h-8 {
-            height: 2rem;
-        }
-
-        .w-12 {
-            width: 3rem;
-        }
-
-        .h-12 {
-            height: 3rem;
-        }
-
-        .w-6 {
-            width: 1.5rem;
-        }
-
-        .h-6 {
-            height: 1.5rem;
-        }
-
-        .w-4 {
-            width: 1rem;
-        }
-
-        .h-4 {
-            height: 1rem;
-        }
-
-        .max-w-md {
-            max-width: 28rem;
-        }
-
-        .text-6xl {
-            font-size: 3.75rem;
-            line-height: 1;
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .text-4xl {
-            font-size: 2.25rem;
-        }
-
-        .text-5xl {
-            font-size: 3rem;
-        }
-
-        .text-3xl {
-            font-size: 1.875rem;
-        }
-
-        .text-lg {
-            font-size: 1.125rem;
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-        }
-
-        .font-bold {
-            font-weight: 700;
-        }
-
-        .font-semibold {
-            font-weight: 600;
-        }
-
-        .text-green-400 {
-            color: #4ade80;
-        }
-
-        .text-purple-400 {
-            color: #a855f7;
-        }
-
-        .text-cyan-400 {
-            color: #22d3ee;
-        }
-
-        .text-yellow-400 {
-            color: #facc15;
-        }
-
-        .text-gray-300 {
-            color: #d1d5db;
-        }
-
-        .text-gray-400 {
-            color: #9ca3af;
-        }
-
-        .text-white {
-            color: white;
-        }
-
-        .text-red-400 {
-            color: #f87171;
-        }
-
-        .line-through {
-            text-decoration: line-through;
-        }
-
-        .opacity-75 {
-            opacity: 0.75;
-        }
-
-        .bg-gradient-text {
-            background: linear-gradient(to right, #4ade80, #22d3ee);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .bg-gradient-text-purple {
-            background: linear-gradient(to right, #a855f7, #4ade80);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .bg-pulse {
-            background: linear-gradient(to right, rgba(168, 85, 247, 0.2), rgba(34, 197, 94, 0.2));
-            animation: pulse 2s infinite;
-        }
-
-        .grid {
-            display: grid;
-        }
-
-        .grid-cols-2 {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .grid-cols-3 {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .grid-cols-4 {
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .gap-6 {
-            gap: 1.5rem;
-        }
-
-        .gap-8 {
-            gap: 2rem;
-        }
-
-        .gap-12 {
-            gap: 3rem;
-        }
-
-        .rounded-lg {
-            border-radius: 0.5rem;
-        }
-
-        .rounded-full {
-            border-radius: 9999px;
-        }
-
-        .p-6 {
-            padding: 1.5rem;
-        }
-
-        .p-4 {
-            padding: 1rem;
-        }
-
-        .p-3 {
-            padding: 0.75rem;
-        }
-
-        .px-3 {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem;
-        }
-
-        .py-1 {
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
-        }
-
-        .px-12 {
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
-
-        .py-6 {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
-
-        .border {
-            border-width: 1px;
-        }
-
-        .border-green-500 {
-            border-color: #10b981;
-        }
-
-        .border-purple-500 {
-            border-color: #8b5cf6;
-        }
-
-        .border-blue-500 {
-            border-color: #3b82f6;
-        }
-
-        .bg-black-20 {
-            background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .bg-white-10 {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .bg-green-500 {
-            background-color: #10b981;
-        }
-
-        .bg-green-600 {
-            background-color: #059669;
-        }
-
-        .bg-blue-500 {
-            background-color: #3b82f6;
-        }
-
-        .bg-red-500 {
-            background-color: #ef4444;
-        }
-
-        .bg-black-50 {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .card {
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.5), rgba(31, 41, 55, 0.5));
-            border: 1px solid rgba(168, 85, 247, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            border-color: rgba(34, 197, 94, 0.5);
-            transform: scale(1.05);
-        }
-
-        .benefit-card {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(16, 185, 129, 0.3));
-            border: 1px solid rgba(59, 130, 246, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            border-color: rgba(16, 185, 129, 0.6);
-            transform: translateY(-5px);
-        }
-
-        .testimonial-card {
-            background: linear-gradient(to right, rgba(34, 197, 94, 0.2), rgba(21, 128, 61, 0.2));
-            border: 1px solid rgba(34, 197, 94, 0.3);
-        }
-
-        .cta-section {
-            background: linear-gradient(to right, rgba(168, 85, 247, 0.5), rgba(34, 197, 94, 0.5));
-        }
-
         .cta-button {
-            background: linear-gradient(to right, #10b981, #22d3ee);
+            background: linear-gradient(45deg, #06D6A0, #14B8A6);
             color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.3rem;
             font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
             text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            display: inline-block;
         }
 
         .cta-button:hover {
-            background: linear-gradient(to right, #059669, #0891b2);
             transform: scale(1.05);
         }
 
-        .scroll-indicator {
-            bottom: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 80px;
         }
 
-        .star-icon {
-            display: inline-block;
-            width: 2rem;
-            height: 2rem;
-            color: #facc15;
-            fill: currentColor;
+        .stat-card {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(6, 214, 160, 0.3);
+            backdrop-filter: blur(10px);
         }
 
-        .z-10 {
-            z-index: 10;
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #06D6A0;
+            margin-bottom: 10px;
         }
 
-        .flex-1 {
-            flex: 1 1 0%;
+        .testimonials {
+            background: #000;
+            padding: 80px 0;
         }
 
-        .flex-start {
-            align-items: flex-start;
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 60px;
         }
 
-        .justify-between {
-            justify-content: space-between;
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
         }
 
-        .top-2 {
-            top: 0.5rem;
+        .testimonial {
+            background: #075E54;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid rgba(6, 214, 160, 0.2);
+            transition: transform 0.3s ease;
         }
 
-        .right-8 {
-            right: 2rem;
+        .testimonial:hover {
+            transform: scale(1.05);
         }
 
-        .bottom-10 {
-            bottom: 2.5rem;
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
         }
 
-        .left-1-2 {
-            left: 50%;
+        .avatar {
+            width: 50px;
+            height: 50px;
+            background: #d1d5db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 15px;
         }
 
-        .transform {
-            transform: translateX(-50%);
+        .testimonial-info h3 {
+            color: white;
+            font-weight: 600;
         }
 
-        /* Animations */
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .testimonial-info .status {
+            color: #d1d5db;
+            font-size: 0.9rem;
         }
 
-        @keyframes bounce {
-            0%, 20%, 53%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40%, 43% {
-                transform: translateY(-30px);
-            }
-            70% {
-                transform: translateY(-15px);
-            }
-            90% {
-                transform: translateY(-4px);
-            }
+        .time {
+            margin-left: auto;
+            color: #9ca3af;
+            font-size: 0.8rem;
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.5;
-            }
-        }
-
-        .animate-fade-in {
-            animation: fade-in 1s ease-out;
-        }
-
-        .animate-bounce {
-            animation: bounce 1s infinite;
-        }
-
-        .animate-pulse {
-            animation: pulse 2s infinite;
-        }
-
-        .delay-1 {
-            animation-delay: 0.1s;
-        }
-
-        .delay-2 {
-            animation-delay: 0.2s;
-        }
-
-        .delay-3 {
-            animation-delay: 0.3s;
-        }
-
-        .delay-4 {
-            animation-delay: 0.4s;
-        }
-
-        /* Responsive */
-        @media (min-width: 768px) {
-            .md\\:text-8xl {
-                font-size: 6rem;
-            }
-            .md\\:text-2xl {
-                font-size: 1.5rem;
-            }
-            .md\\:text-5xl {
-                font-size: 3rem;
-            }
-            .md\\:grid-cols-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .md\\:grid-cols-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .lg\\:grid-cols-4 {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-            }
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .show {
-            display: block;
-        }
-
-        /* Icons */
-        .icon {
-            width: 1em;
-            height: 1em;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .shield-icon {
-            width: 2rem;
-            height: 2rem;
-        }
-
-        .arrow-down-icon {
-            width: 2rem;
-            height: 2rem;
-            color: #4ade80;
-        }
-
-        /* Video container styles */
-        .video-container {
+        .message {
+            background: #DCF8C6;
+            color: #1f2937;
+            padding: 15px;
+            border-radius: 12px;
             position: relative;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .message::after {
+            content: "✓✓";
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+
+        .references {
+            background: linear-gradient(135deg, #000 0%, #4c1d95 50%, #000 100%);
+            padding: 80px 0;
+        }
+
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .reference-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(6, 214, 160, 0.5);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .reference-card:hover {
+            transform: scale(1.05);
+        }
+
+        .reference-card img {
             width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: white;
+        }
+
+        .video-section {
+            background: linear-gradient(135deg, #000 0%, #1f2937 50%, #000 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .video-container {
             max-width: 800px;
-            margin: 0 auto;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
+            margin: 0 auto 40px;
+            position: relative;
+            border: 3px solid #06D6A0;
+            border-radius: 20px;
             overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 50px rgba(6, 214, 160, 0.3);
         }
 
         .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 450px;
+        }
+
+        .marketing-section {
+            background: linear-gradient(135deg, #000 0%, #4c1d95 100%);
+            padding: 80px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: rgba(139, 92, 246, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #8B5CF6;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: #06D6A0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .check-icon::after {
+            content: "✓";
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .final-cta {
+            background: linear-gradient(135deg, #4c1d95 0%, #000 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .price-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 60px 40px;
+            border-radius: 30px;
+            border: 2px solid #06D6A0;
+            position: relative;
+            box-shadow: 0 0 50px rgba(6, 214, 160, 0.3);
+        }
+
+        .old-price {
+            font-size: 1.5rem;
+            color: #9ca3af;
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+
+        .new-price {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #06D6A0;
+            margin-bottom: 20px;
+        }
+
+        .discount {
+            background: #ef4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .benefits {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .benefits li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .benefits li::before {
+            content: "✅";
+            margin-right: 10px;
+        }
+
+        .final-button {
+            background: linear-gradient(45deg, #06D6A0, #14B8A6);
+            color: white;
+            padding: 25px 50px;
             border: none;
             border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-button:hover {
+            transform: scale(1.05);
+        }
+
+        .limited-offer {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .guarantee {
+            background: rgba(6, 214, 160, 0.1);
+            border: 1px solid #06D6A0;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .description {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .references-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-30px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-15px);
+            }
+        }
+
+        .arrow-down {
+            font-size: 2rem;
+            color: #06D6A0;
         }
     </style>
 </head>
-
 <body>
-    <div class="min-h-screen bg-gradient">
-        <!-- Hero Section -->
-        <section class="relative min-h-screen flex flex-col items-center justify-center px-4">
-            <div class="absolute inset-0 bg-pulse"></div>
+    <!-- Hero Section -->
+    <section class="section hero">
+        <div class="container">
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDMyMCAzMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iMzIwIiBmaWxsPSIjMDAwIiBzdHJva2U9IiMwNkQ2QTAiIHN0cm9rZS13aWR0aD0iNCIvPgo8dGV4dCB4PSIxNjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzA2RDZBMCI+RElYPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzhCNUNGNiI+VkVOREU8L3RleHQ+CjwvZ3ZnPgo=" alt="DIX VENDE Logo" />
+            </div>
             
-            <div class="relative z-10 text-center max-w-4xl mx-auto">
-                <div class="mb-8">
-                    <img 
-                        src="./public/lovable-uploads/1185aa67-52b8-4f30-a954-9fd5d9274845.png" 
-                        alt="Estica Vendas - Dix Vende Muito Mais" 
-                        class="w-full max-w-md mx-auto animate-fade-in"
-                        onerror="this.style.display='block'; console.log('Imagem carregada com sucesso');"
-                        onload="console.log('Imagem DIX Vendas carregada!');"
-                    />
+            <h1 class="title">ESTICA VENDAS</h1>
+            
+            <h2 class="subtitle">Curso Completo | Estica Vendas - Vídeo Aulas</h2>
+            
+            <p class="description">
+                Descubra os segredos do <strong style="color: #06D6A0;">Marketing Digital</strong> e 
+                aprenda a vender da forma certa com estratégias comprovadas de 
+                <strong style="color: #14B8A6;">Tráfego Pago</strong>, 
+                <strong style="color: #8B5CF6;">Copywriting</strong> e 
+                <strong style="color: #06D6A0;">Funil de Vendas</strong>
+            </p>
+
+            <a href="#final-cta" class="cta-button">QUERO VENDER MUITO MAIS!</a>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">+500</div>
+                    <div>Alunos Transformados</div>
                 </div>
-                
-                <h1 class="text-6xl md:text-8xl font-bold mb-6 bg-gradient-text animate-fade-in">
-                    ESTICA VENDAS
-                </h1>
-                
-                <p class="text-xl md:text-2xl mb-8 text-gray-300 animate-fade-in">
-                    O curso que vai revolucionar suas vendas e multiplicar seus resultados
+                <div class="stat-card">
+                    <div class="stat-number">97%</div>
+                    <div>Taxa de Satisfação</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24h</div>
+                    <div>Suporte Garantido</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="arrow-down">↓</div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">DEPOIMENTOS REAIS</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #d1d5db; margin-bottom: 60px;">
+                Veja o que nossos alunos estão dizendo sobre o curso
+            </p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍💼</div>
+                        <div class="testimonial-info">
+                            <h3>Marina Santos</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">14:32</div>
+                    </div>
+                    <div class="message">
+                        Cara, o curso Estica Vendas mudou minha vida! Antes eu vendia 2-3 produtos por mês, agora estou faturando R$ 15.000 mensais com marketing digital! 🚀
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👨‍💻</div>
+                        <div class="testimonial-info">
+                            <h3>Carlos Oliveira</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">09:15</div>
+                    </div>
+                    <div class="message">
+                        Incrível como o copywriting que aprendi no curso fez diferença! Minha taxa de conversão aumentou 300%. Obrigado DIX VENDE! 💰
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍🚀</div>
+                        <div class="testimonial-info">
+                            <h3>Ana Beatriz</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">16:48</div>
+                    </div>
+                    <div class="message">
+                        Pessoal, sério mesmo! O funil de vendas que montei seguindo o curso já me trouxe mais de R$ 50.000 em vendas! Esse método funciona! 🎯
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👨‍💼</div>
+                        <div class="testimonial-info">
+                            <h3>Roberto Silva</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">11:22</div>
+                    </div>
+                    <div class="message">
+                        Estava gastando uma fortuna com tráfego pago sem resultado. Depois do Estica Vendas, meu ROAS subiu para 8x! Recomendo demais! 📈
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👩‍🎨</div>
+                        <div class="testimonial-info">
+                            <h3>Juliana Costa</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">13:57</div>
+                    </div>
+                    <div class="message">
+                        Gente, que curso incrível! Em 30 dias aplicando as técnicas, saí de zero para R$ 8.000 de faturamento. Muito obrigada DIX VENDE! ❤️
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="avatar">👨‍🎓</div>
+                        <div class="testimonial-info">
+                            <h3>Pedro Henrique</h3>
+                            <div class="status">online</div>
+                        </div>
+                        <div class="time">08:33</div>
+                    </div>
+                    <div class="message">
+                        O módulo de copywriting é sensacional! Minhas landing pages agora convertem 5x mais. Valeu cada centavo investido no curso! 🔥
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <p style="font-size: 1.5rem; font-weight: bold; color: #06D6A0; margin-bottom: 30px;">
+                    +500 ALUNOS JÁ TRANSFORMARAM SUAS VENDAS!
                 </p>
-                
-                <div class="flex justify-center items-center space-x-4 mb-8">
-                    <span class="star-icon animate-bounce">⭐</span>
-                    <span class="star-icon animate-bounce delay-1">⭐</span>
-                    <span class="star-icon animate-bounce delay-2">⭐</span>
-                    <span class="star-icon animate-bounce delay-3">⭐</span>
-                    <span class="star-icon animate-bounce delay-4">⭐</span>
-                    <span class="text-2xl font-bold text-yellow-400">5.0</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="section references">
+        <div class="container">
+            <h2 class="section-title">
+                <span style="background: linear-gradient(45deg, #06D6A0, #14B8A6, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    REFERÊNCIAS
+                </span>
+            </h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #d1d5db; margin-bottom: 60px;">
+                Inspiração dos maiores nomes do sucesso
+            </p>
+
+            <div class="references-grid">
+                <div class="reference-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjMWYyOTM3Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TdWNlc3NvPC90ZXh0Pgo8L3N2Zz4K" alt="Leonardo DiCaprio" />
+                    <div class="quote">
+                        "Já Fui Um Homem Rico, E Já Fui Um Homem Pobre E Escolho a Riqueza Toda Santa Vez."
+                    </div>
                 </div>
 
-                <!-- YouTube Video -->
-                <div class="mb-12 animate-fade-in">
-                    <div class="video-container">
-                        <iframe 
-                            src="https://www.youtube.com/embed/cvnzkIZjwno" 
-                            title="Marketing Digital: Como Começar do Zero"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p class="text-sm text-gray-400 mt-4">Veja como o marketing digital pode transformar seu negócio</p>
+                <div class="reference-card">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjMWYyOTM3Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MdXhvPC90ZXh0Pgo8L3N2Zz4K" alt="Luxo" />
                 </div>
             </div>
 
-            <div id="scroll-indicator" class="absolute bottom-10 left-1-2 transform animate-bounce">
-                <div class="arrow-down-icon">⬇️</div>
-                <p class="text-sm mt-2 text-gray-400">Role para descobrir mais</p>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="py-20 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-text-purple">
-                    Transforme Sua Estratégia de Vendas
-                </h2>
-                
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-6 text-green-400">Marketing Digital que Converte</h3>
-                        <p class="text-lg text-gray-300 mb-6">
-                            No mundo digital atual, não basta apenas ter um produto. É preciso saber como apresentá-lo, 
-                            onde encontrar seu público e como convertê-los em clientes fiéis. O curso Estica Vendas 
-                            ensina exatamente isso através de metodologias comprovadas.
-                        </p>
-                        <p class="text-lg text-gray-300">
-                            Aprenda as estratégias que empresas milionárias usam para dominar o mercado digital 
-                            e aplicar em seu próprio negócio, independente do tamanho.
-                        </p>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-2xl font-bold mb-6 text-purple-400 flex items-center">
-                            🛡️
-                            <span class="mr-3"></span>
-                            Segurança e Resultados Garantidos
-                        </h3>
-                        <p class="text-lg text-gray-300 mb-6">
-                            Nossa metodologia é 100% testada e aprovada por milhares de alunos. Oferecemos 
-                            garantia de 30 dias - se não ficar satisfeito, devolvemos seu dinheiro.
-                        </p>
-                        <div class="flex items-center space-x-4">
-                            <div class="bg-green-500 p-3 rounded-full">
-                                🛡️
-                            </div>
-                            <span class="text-green-400 font-semibold">Pagamento 100% Seguro</span>
-                        </div>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="reference-card" style="padding: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjMWYyOTM3Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmlQaG9uZTwvdGV4dD4KPC9zdmc+Cg==" alt="iPhone" style="height: 150px;" />
+                </div>
+                <div class="reference-card" style="padding: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjMWYyOTM3Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByZW1pdW08L3RleHQ+Cjwvc3ZnPgo=" alt="Premium" style="height: 150px;" />
+                </div>
+                <div class="reference-card" style="padding: 20px;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjMWYyOTM3Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwNkQ2QTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPiQ8L3RleHQ+Cjwvc3ZnPgo=" alt="Dinheiro" style="height: 150px;" />
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Modules Section -->
-        <section class="py-20 px-4 bg-black-20">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-text">
-                    Módulos do Curso
-                </h2>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="card rounded-lg p-6 text-center">
-                        <div class="text-4xl mb-4">✍️</div>
-                        <h3 class="text-xl font-bold mb-3 text-green-400">COPYWRITING</h3>
-                        <p class="text-gray-300 text-sm">Técnicas avançadas de persuasão textual</p>
-                    </div>
-                    
-                    <div class="card rounded-lg p-6 text-center">
-                        <div class="text-4xl mb-4">🔄</div>
-                        <h3 class="text-xl font-bold mb-3 text-green-400">FUNIL DE VENDAS</h3>
-                        <p class="text-gray-300 text-sm">Estruture seu processo de conversão</p>
-                    </div>
-                    
-                    <div class="card rounded-lg p-6 text-center">
-                        <div class="text-4xl mb-4">💰</div>
-                        <h3 class="text-xl font-bold mb-3 text-green-400">TRÁFEGO PAGO</h3>
-                        <p class="text-gray-300 text-sm">Maximize ROI com anúncios certeiros</p>
-                    </div>
-                    
-                    <div class="card rounded-lg p-6 text-center">
-                        <div class="text-4xl mb-4">🌱</div>
-                        <h3 class="text-xl font-bold mb-3 text-green-400">TRÁFEGO ORGÂNICO</h3>
-                        <p class="text-gray-300 text-sm">Cresça naturalmente nas redes</p>
-                    </div>
-                </div>
+    <!-- Video Section -->
+    <section class="section video-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span style="background: linear-gradient(45deg, #06D6A0, #14B8A6, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    🎯 ASSISTA AGORA
+                </span>
+            </h2>
+            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 40px;">
+                O Vídeo Que Vai Mudar Sua Vida Financeira Para Sempre!
+            </p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/cvnzkIZjwno"
+                    title="Vídeo Exclusivo - Estica Vendas"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
-        </section>
 
-        <!-- Benefits Section -->
-        <section class="py-20 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-text">
-                    Benefícios Exclusivos
-                </h2>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="benefit-card rounded-lg p-6 text-center">
-                        <div class="text-5xl mb-4">✅</div>
-                        <h3 class="text-xl font-bold mb-3 text-green-400">GARANTIA DE 7 DIAS</h3>
-                        <p class="text-gray-300 text-sm">
-                            Se não ficar satisfeito com o conteúdo, devolvemos 100% do seu dinheiro 
-                            sem perguntas. Sua segurança é nossa prioridade.
-                        </p>
-                    </div>
-                    
-                    <div class="benefit-card rounded-lg p-6 text-center">
-                        <div class="text-5xl mb-4">🆘</div>
-                        <h3 class="text-xl font-bold mb-3 text-cyan-400">SUPORTE 24 HORAS</h3>
-                        <p class="text-gray-300 text-sm">
-                            Equipe especializada disponível 24h para tirar suas dúvidas e 
-                            te apoiar durante toda sua jornada de aprendizado.
-                        </p>
-                    </div>
-                    
-                    <div class="benefit-card rounded-lg p-6 text-center">
-                        <div class="text-5xl mb-4">🚀</div>
-                        <h3 class="text-xl font-bold mb-3 text-purple-400">RESULTADOS GARANTIDOS</h3>
-                        <p class="text-gray-300 text-sm">
-                            Metodologia comprovada que já transformou milhares de negócios. 
-                            Aplique e veja seus resultados crescerem exponencialmente.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mt-12 text-center">
-                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">
-                        + Benefícios do Marketing Digital
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        <div class="bg-white-10 rounded-lg p-4">
-                            <p class="text-gray-300">
-                                📈 <strong class="text-green-400">Alcance Global:</strong> Venda para qualquer lugar do mundo
-                            </p>
-                        </div>
-                        <div class="bg-white-10 rounded-lg p-4">
-                            <p class="text-gray-300">
-                                💸 <strong class="text-cyan-400">Baixo Investimento:</strong> Comece com pouco e escale rapidamente
-                            </p>
-                        </div>
-                        <div class="bg-white-10 rounded-lg p-4">
-                            <p class="text-gray-300">
-                                🎯 <strong class="text-purple-400">Público Segmentado:</strong> Encontre seus clientes ideais
-                            </p>
-                        </div>
-                        <div class="bg-white-10 rounded-lg p-4">
-                            <p class="text-gray-300">
-                                📊 <strong class="text-yellow-400">Métricas Precisas:</strong> Acompanhe cada resultado em tempo real
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="py-20 px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-text-purple">
-                    O Que Nossos Alunos Dizem
-                </h2>
-                
-                <div class="space-y-6">
-                    <div class="testimonial-card rounded-lg p-6 animate-fade-in">
-                        <div class="flex flex-start space-x-4">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-white">
-                                M
-                            </div>
-                            <div class="flex-1">
-                                <div class="bg-white-10 rounded-lg p-4 mb-2">
-                                    <p class="text-white">Cara, esse curso mudou minha vida! Minhas vendas triplicaram em 2 meses! 🚀</p>
-                                </div>
-                                <div class="flex justify-between items-center text-sm text-gray-400">
-                                    <span class="font-semibold">Maria Silva</span>
-                                    <span>15:42</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card rounded-lg p-6 animate-fade-in delay-2">
-                        <div class="flex flex-start space-x-4">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-white">
-                                J
-                            </div>
-                            <div class="flex-1">
-                                <div class="bg-white-10 rounded-lg p-4 mb-2">
-                                    <p class="text-white">Melhor investimento que já fiz! Os resultados apareceram na primeira semana. Recomendo demais! 💯</p>
-                                </div>
-                                <div class="flex justify-between items-center text-sm text-gray-400">
-                                    <span class="font-semibold">João Santos</span>
-                                    <span>14:28</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card rounded-lg p-6 animate-fade-in delay-4">
-                        <div class="flex flex-start space-x-4">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold text-white">
-                                A
-                            </div>
-                            <div class="flex-1">
-                                <div class="bg-white-10 rounded-lg p-4 mb-2">
-                                    <p class="text-white">Incrível como as técnicas funcionam! Já paguei o curso só com as primeiras vendas. Top! 🔥</p>
-                                </div>
-                                <div class="flex justify-between items-center text-sm text-gray-400">
-                                    <span class="font-semibold">Ana Costa</span>
-                                    <span>13:15</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-20 px-4 cta-section">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-text">
-                    Não Perca Esta Oportunidade!
-                </h2>
-                
-                <div class="mb-8">
-                    <div class="relative" style="display: inline-block;">
-                        <div class="text-3xl text-red-400 line-through mb-2 opacity-75">
-                            R$ 88,00
-                        </div>
-                        <div class="text-6xl font-bold text-green-400 animate-pulse">
-                            R$ 29,99
-                        </div>
-                        <div class="absolute bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-bounce" style="top: -0.5rem; right: -2rem;">
-                            66% OFF
-                        </div>
-                    </div>
-                </div>
-                
-                <p class="text-xl text-gray-300 mb-8">
-                    Oferta especial por tempo limitado! Comece sua jornada para o sucesso hoje mesmo.
+            <div style="background: rgba(0, 0, 0, 0.8); padding: 40px; border-radius: 20px; border: 1px solid #06D6A0;">
+                <h3 style="font-size: 2rem; font-weight: bold; margin-bottom: 20px;">
+                    💎 GOSTOU DO QUE VIU?
+                </h3>
+                <p style="font-size: 1.2rem; color: #d1d5db; margin-bottom: 30px;">
+                    Continue rolando para descobrir como ter acesso ao curso completo com desconto exclusivo!
                 </p>
-                
-                <a 
-                    href="https://pay.kiwify.com.br/0LDTPaj" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="cta-button py-6 px-12 rounded-full text-xl"
-                >
-                    🚀 ADQUIRA O CURSO AGORA 🚀
-                </a>
-                
-                <div class="mt-6 flex justify-center items-center space-x-4 text-sm text-gray-400">
-                    🛡️
-                    <span>Pagamento 100% Seguro</span>
-                    <span>•</span>
-                    <span>Garantia de 30 dias</span>
-                    <span>•</span>
-                    <span>Acesso imediato</span>
+                <div style="font-size: 2rem; animation: bounce 2s infinite;">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Section -->
+    <section class="section marketing-section">
+        <div class="container">
+            <h2 class="section-title">MARKETING DIGITAL</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #d1d5db; margin-bottom: 60px;">
+                Domine as estratégias que realmente funcionam no mundo digital
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">TRÁFEGO PAGO QUE CONVERTE</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Facebook e Instagram Ads:</strong> Aprenda a criar campanhas que geram resultados reais
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Google Ads:</strong> Domine as estratégias para aparecer no momento exato
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Otimização:</strong> Técnicas para diminuir custo e aumentar ROAS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3 class="feature-title">COPYWRITING PERSUASIVO</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Gatilhos Mentais:</strong> 15 gatilhos mais poderosos para influenciar decisões
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Headlines Irresistíveis:</strong> Fórmulas testadas para capturar atenção
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>CTA Poderosos:</strong> Chamadas que convertem visitantes em clientes
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3 class="feature-title">FUNIL DE VENDAS</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Estrutura:</strong> Como mapear a jornada do cliente
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Automação:</strong> Configure sequências que vendem sozinhas
+                        </li>
+                        <li>
+                            <div class="check-icon"></div>
+                            <strong>Otimização:</strong> Acompanhe e melhore seus resultados
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
 
-        <!-- Footer -->
-        <footer class="py-12 px-4 bg-black-50 text-center text-gray-400">
-            <p>&copy; 2024 Estica Vendas. Todos os direitos reservados.</p>
-            <p class="mt-2">Transformando vendedores em especialistas digitais.</p>
-        </footer>
-    </div>
+            <div style="text-align: center; margin-top: 60px;">
+                <p style="font-size: 1.8rem; font-weight: bold; margin-bottom: 30px;">
+                    PARE DE PERDER VENDAS POR NÃO SABER COMO COMUNICAR SEU VALOR!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="section final-cta">
+        <div class="container">
+            <h2 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 30px;">
+                <span style="background: linear-gradient(45deg, #06D6A0, #14B8A6, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    ÚLTIMA CHANCE!
+                </span>
+            </h2>
+            <p style="font-size: 1.5rem; color: #8B5CF6; font-weight: bold; margin-bottom: 20px;">
+                🔥 OFERTA ESPECIAL POR TEMPO LIMITADO 🔥
+            </p>
+            <p style="font-size: 1.3rem; color: #d1d5db; margin-bottom: 60px;">
+                Não perca a oportunidade de transformar sua vida com o curso mais completo de marketing digital do Brasil!
+            </p>
+
+            <div class="price-card">
+                <div class="old-price">De R$ 88,00</div>
+                <div class="new-price">R$ 29,99</div>
+                <div class="discount">💥 DESCONTO DE 66% 💥</div>
+
+                <ul class="benefits">
+                    <li>Acesso vitalício ao curso completo</li>
+                    <li>Suporte direto com especialistas</li>
+                    <li>Certificado de conclusão</li>
+                    <li>Garantia de 7 dias ou seu dinheiro de volta</li>
+                </ul>
+
+                <button class="final-button" onclick="window.open('https://pay.kiwify.com.br/0LDTPaj', '_blank')">
+                    🚀 QUERO ACESSAR O CURSO 🚀
+                </button>
+
+                <div style="margin-top: 30px; font-size: 0.9rem; color: #9ca3af;">
+                    🔒 Pagamento 100% seguro • Acesso imediato após a compra
+                </div>
+            </div>
+
+            <div class="limited-offer">
+                <div style="color: #ef4444; font-weight: bold; font-size: 1.2rem; margin-bottom: 15px;">
+                    ⚠️ ATENÇÃO: VAGAS LIMITADAS!
+                </div>
+                <div>
+                    Restam apenas <strong style="color: #ef4444;">23 vagas</strong> com este desconto especial.
+                    <br />
+                    Após esgotar, o preço volta para R$ 197,00!
+                </div>
+            </div>
+
+            <div class="guarantee">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px;">
+                    🔒 GARANTIA DE 7 DIAS
+                </h3>
+                <p style="margin-bottom: 20px;">
+                    Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicação.
+                </p>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">🛡️</div>
+                        <div style="font-size: 0.9rem;">Pagamento Seguro</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">📞</div>
+                        <div style="font-size: 0.9rem;">Suporte 24h</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 10px;">✅</div>
+                        <div style="font-size: 0.9rem;">Acesso Imediato</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 30px;">
+                    💎 BÔNUS EXCLUSIVOS PARA QUEM COMPRAR HOJE:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="background: rgba(139, 92, 246, 0.2); padding: 30px; border-radius: 15px; border: 1px solid #8B5CF6;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                        <div style="font-weight: bold; margin-bottom: 10px;">Templates de Landing Page</div>
+                        <div style="color: #9ca3af; font-size: 0.9rem;">Valor: R$ 97,00</div>
+                    </div>
+                    <div style="background: rgba(6, 214, 160, 0.2); padding: 30px; border-radius: 15px; border: 1px solid #06D6A0;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📈</div>
+                        <div style="font-weight: bold; margin-bottom: 10px;">Planilha de Métricas</div>
+                        <div style="color: #9ca3af; font-size: 0.9rem;">Valor: R$ 67,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
-        // Scroll indicator functionality
-        window.addEventListener('scroll', function() {
-            const scrollIndicator = document.getElementById('scroll-indicator');
-            if (window.scrollY < 100) {
-                scrollIndicator.classList.remove('hidden');
-                scrollIndicator.classList.add('show');
-            } else {
-                scrollIndicator.classList.add('hidden');
-                scrollIndicator.classList.remove('show');
-            }
+        // Smooth scrolling para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
 
-        // Smooth scroll functionality for better UX
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add any additional JavaScript functionality here if needed
-            console.log('Estica Vendas - Site carregado com sucesso!');
+        // Animação de entrada dos elementos quando aparecem na tela
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-card, .testimonial, .reference-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
     </script>
 </body>
